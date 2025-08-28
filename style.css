@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: linear-gradient(135deg, #56CCF2, #2F80ED);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    background: url("assets/sunny.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.8);
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-container:hover {
+    transform: scale(1.015);
+}
+
+.location-display {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.location, .search-btn {
+    height: 30px;
+    padding: 0 8px;
+    border-radius: 4px;
+    background: none;
+    border: 2px solid white;
+    color: white;   
+}
+
+.location {
+    transition: all 0.3s ease;
+}
+
+.location::placeholder {
+    color: white;
+}
+
+.location:focus {
+    outline: none;
+    box-shadow: 0 0 12px white;
+}
+
+.search-btn {
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: white;
+    color: rgb(14, 147, 69);
+}
+
+.time-container {
+    color: white;
+    padding: 12px 0;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    color: white;
+}
+
+#temperature {
+    font-size: 3em;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="assets/png" href="assets/weather.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="search-container">
+                <form class="weatherForm">
+                    <input type="text" class="location" id="location" placeholder="type location..">
+                    <button class="search-btn" id="submit-location">Search</button>
+                </form>
+                <div class="time-container">
+                    <div class="location-display">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p id="display-location">LOCATION</p>
+                    </div>
+                    <p id="date">Monday, Aug 28th</p>
+                </div>
+            </div>
+
+            <div class="weather-container">
+                <p id="temperature">0° C</p>
+                <div class="weather-info">
+                    <img src="assets/clear-sky.png" id="weather-icon" alt="weather-icon" height="60">
+                    <p id="weather-status">Clear sky</p>
+                    <p id="time">00:00 AM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/ebb2aa59d3.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
